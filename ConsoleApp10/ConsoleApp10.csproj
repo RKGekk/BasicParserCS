@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59197319-EE13-4AEF-B6F7-D5D4C599B30E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp10</RootNamespace>
+    <AssemblyName>ConsoleApp10</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access.cs" />
+    <Compile Include="And.cs" />
+    <Compile Include="Arith.cs" />
+    <Compile Include="BasicArray.cs" />
+    <Compile Include="BasicType.cs" />
+    <Compile Include="Break.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="Do.cs" />
+    <Compile Include="Else.cs" />
+    <Compile Include="Env.cs" />
+    <Compile Include="Expr.cs" />
+    <Compile Include="Id.cs" />
+    <Compile Include="If.cs" />
+    <Compile Include="Lexer.cs" />
+    <Compile Include="Logical.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Not.cs" />
+    <Compile Include="Num.cs" />
+    <Compile Include="Op.cs" />
+    <Compile Include="Or.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Real.cs" />
+    <Compile Include="Rel.cs" />
+    <Compile Include="Seq.cs" />
+    <Compile Include="Set.cs" />
+    <Compile Include="SetElem.cs" />
+    <Compile Include="Stmt.cs" />
+    <Compile Include="Tag.cs" />
+    <Compile Include="Temp.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="Unary.cs" />
+    <Compile Include="While.cs" />
+    <Compile Include="Word.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="test.src" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
